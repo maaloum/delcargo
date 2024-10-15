@@ -1,0 +1,34 @@
+.round-navbar {
+  border-radius: 10px;
+}
+
+.hover-orange {
+  /* background-color: white;
+  border: none;
+  color: black;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden; */
+  padding: 20px 20px; /* Add padding */
+  margin: 10px;
+}
+
+.hover-orange::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: orange;
+  transition: height 0.3s ease;
+  z-index: -1;
+}
+
+.hover-orange:hover {
+  color: white;
+}
+
+.hover-orange:hover::before {
+  height: 100%;
+}
