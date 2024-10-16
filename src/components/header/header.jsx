@@ -1,14 +1,18 @@
-import { Container, Navbar, Button } from "react-bootstrap";
-
+import { Container, Button, Navbar } from "react-bootstrap";
+import "./header.css";
 function header() {
   return (
-    <Navbar bg="light" className="mx-4">
+    <Navbar bg="light" className="mx-5 round-navbar">
       <Container>
+        <div className="sc-fBEEOr aOQZO">
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="hover-line1"></span>
+          <span className="hover-line2"></span>
+        </div>
         <Navbar.Brand href="#home">MyLogo</Navbar.Brand>
-
-        {/* Right-aligned Login Button */}
         <Navbar.Collapse className="justify-content-end">
-          <Button variant="outline-primary">Login</Button>
+          <Button className="custom-button px-5 py-2 ">LogIn</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

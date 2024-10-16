@@ -1,8 +1,9 @@
 import Header from "../header/header";
+import "./home.css";
 
 function home() {
   return (
-    <div className="text-center mt-5">
+    <div className="hero-background">
       <Header />
     </div>
   );
