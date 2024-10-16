@@ -1,34 +1,111 @@
 .round-navbar {
   border-radius: 10px;
 }
-
-.hover-orange {
-  /* background-color: white;
-  border: none;
-  color: black;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  position: relative;
-  overflow: hidden; */
-  padding: 20px 20px; /* Add padding */
-  margin: 10px;
+.custom-button {
+  background-color: #fafafa !important;
+  border: 2px solid black !important;
+  color: black !important; /* White text */
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
 }
 
-.hover-orange::before {
+.custom-button:hover {
+  background-color: orange !important;
+  /* border-color: orange !important; */
+  /* color: orange !important; */
+}
+
+.custom-button::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 0;
-  background-color: orange;
+  background-color: orange !important;
   transition: height 0.3s ease;
   z-index: -1;
 }
 
-.hover-orange:hover {
-  color: white;
+/* .custom-button:hover {
+  color: orange !important;
+} */
+
+.custom-button:hover::before {
+  height: 100%;
 }
 
-.hover-orange:hover::before {
-  height: 100%;
+.aOQZO * {
+  padding: 0px;
+  margin: 0px;
+}
+
+.aOQZO * {
+  transition: 0.3s ease-in-out;
+}
+
+.aOQZO {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  border: 2px solid rgb(29, 29, 31);
+  position: relative;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+  transition: 0.3s ease-in-out;
+}
+
+.aOQZO .line1 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  height: 2px;
+  background: rgb(29, 29, 31);
+  position: absolute;
+  transform: translateY(3.5px) rotate(0deg);
+  width: 70%;
+}
+
+.aOQZO .line2 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  height: 2px;
+  background: rgb(29, 29, 31);
+  position: absolute;
+  transform: translateY(-3.5px) rotate(0deg);
+  width: 70%;
+}
+
+.aOQZO .hover-line1 {
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  background: rgb(245, 245, 247);
+  position: absolute;
+  transform: translateY(3.5px) rotate(0deg);
+  width: 70%;
+}
+
+.aOQZO .hover-line2 {
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  background: rgb(245, 245, 247);
+  position: absolute;
+  transform: translateY(-3.5px) rotate(0deg);
+  width: 70%;
 }
